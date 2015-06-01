@@ -36,8 +36,8 @@
     </HBox>
     <HBox fx:id="controlsBox" alignment="TOP_LEFT" fillHeight="true" layoutX="14.0" layoutY="347.0" minHeight="16.0" prefHeight="36.0" prefWidth="243.0" spacing="10.0" translateY="60.0" visible="true" AnchorPane.bottomAnchor="17.0">
       <children>
-        <Button id="connectBtn" defaultButton="true" mnemonicParsing="false" styleClass="fat-button" text="Primary" />
-        <Button cancelButton="true" mnemonicParsing="false" styleClass="fat-button" text="Secondary" />
+        <Button id="connectBtn" defaultButton="true" mnemonicParsing="false" onAction="#onTimestampClicked" styleClass="fat-button" text="Timestamp" />
+        <Button cancelButton="true" mnemonicParsing="false" onAction="#onVerifyClicked" styleClass="fat-button" text="Verify" />
       </children>
     </HBox>
     <ImageView fitHeight="243.0" fitWidth="243.0" opacity="0.28" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-36.0" AnchorPane.rightAnchor="-34.0">
@@ -53,10 +53,10 @@
       </image>
     </ImageView>
     <ClickableBitcoinAddress fx:id="addressControl" layoutY="45.0" prefHeight="21.0" prefWidth="391.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="195.0" />
-    <StackPane layoutX="14.0" layoutY="81.0" prefHeight="249.0" prefWidth="572.0" style="-fx-border-color: lightgrey; -fx-border-style: dashed" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="81.0">
-      <children>
-        <Label text="Your content goes here" />
-      </children>
+    <StackPane layoutX="14.0" layoutY="81.0" prefHeight="249.0" prefWidth="572.0" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="81.0">
+         <children>
+            <ListView fx:id="pendingProofsList" opacity="0.68" prefHeight="200.0" prefWidth="200.0" />
+         </children>
     </StackPane>
     <HBox spacing="20" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="17.0">
        <children>

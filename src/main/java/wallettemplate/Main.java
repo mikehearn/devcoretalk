@@ -28,9 +28,9 @@ import java.net.URL;
 import static wallettemplate.utils.GuiUtils.*;
 
 public class Main extends Application {
-    public static String APP_NAME = "WalletTemplate";
+    public static String APP_NAME = "Timestamper";
 
-    public static NetworkParameters params = MainNetParams.get();
+    public static NetworkParameters params = RegTestParams.get();
     public static WalletAppKit bitcoin;
     public static Main instance;
 
@@ -38,6 +38,7 @@ public class Main extends Application {
     private Pane mainUI;
     public MainController controller;
     public NotificationBarPane notificationBar;
+    public Stage mainWindow;
 
     @Override
     public void start(Stage mainWindow) throws Exception {
@@ -53,6 +54,8 @@ public class Main extends Application {
         instance = this;
         // Show the crash dialog for any exceptions that we don't handle and that hit the main loop.
         GuiUtils.handleCrashesOnThisThread();
+
+        this.mainWindow = mainWindow;
 
         if (System.getProperty("os.name").toLowerCase().contains("mac")) {
             // We could match the Mac Aqua style here, except that (a) Modena doesn't look that bad, and (b)
@@ -128,6 +131,8 @@ public class Main extends Application {
             // As an example!
             bitcoin.useTor();
             // bitcoin.setDiscovery(new HttpDiscovery(params, URI.create("http://localhost:8080/peers"), ECKey.fromPublicOnly(BaseEncoding.base16().decode("02cba68cfd0679d10b186288b75a59f9132b1b3e222f6332717cb8c4eb2040f940".toUpperCase()))));
+        } else {
+            bitcoin.useTor();
         }
         bitcoin.setDownloadListener(controller.progressBarUpdater())
                .setBlockingStartup(false)
