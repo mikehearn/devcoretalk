@@ -1,4 +1,4 @@
-package wallettemplate.utils;
+package timestamper.utils;
 
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;

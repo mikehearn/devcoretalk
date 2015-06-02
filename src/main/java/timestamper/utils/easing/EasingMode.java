@@ -1,4 +1,4 @@
-package wallettemplate.utils.easing;
+package timestamper.utils.easing;
 
 /**
  * Defines the three easing modes, ease-in, ease-out and ease-both.

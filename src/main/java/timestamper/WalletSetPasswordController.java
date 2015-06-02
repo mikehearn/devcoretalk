@@ -1,4 +1,4 @@
-package wallettemplate;
+package timestamper;
 
 import com.google.protobuf.*;
 import javafx.application.*;
@@ -10,12 +10,12 @@ import org.bitcoinj.crypto.*;
 import org.bitcoinj.wallet.*;
 import org.slf4j.*;
 import org.spongycastle.crypto.params.*;
-import wallettemplate.utils.*;
+import timestamper.utils.*;
 
 import java.time.*;
 import java.util.concurrent.*;
 
-import static wallettemplate.utils.GuiUtils.*;
+import static timestamper.utils.GuiUtils.*;
 
 public class WalletSetPasswordController {
     private static final Logger log = LoggerFactory.getLogger(WalletSetPasswordController.class);

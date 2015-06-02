@@ -1,4 +1,4 @@
-package wallettemplate.utils;
+package timestamper.utils;
 
 import org.bitcoinj.crypto.KeyCrypterScrypt;
 import com.google.common.util.concurrent.Uninterruptibles;
@@ -12,7 +12,7 @@ import javax.annotation.*;
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
-import static wallettemplate.utils.GuiUtils.checkGuiThread;
+import static timestamper.utils.GuiUtils.checkGuiThread;
 
 /**
  * Background tasks for pumping a progress meter and deriving an AES key using scrypt.

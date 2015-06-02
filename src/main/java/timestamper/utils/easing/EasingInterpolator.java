@@ -22,7 +22,7 @@
  * THE SOFTWARE.
  */
 
-package wallettemplate.utils.easing;
+package timestamper.utils.easing;
 
 import javafx.animation.Interpolator;
 import javafx.beans.property.ObjectProperty;

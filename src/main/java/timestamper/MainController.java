@@ -1,4 +1,4 @@
-package wallettemplate;
+package timestamper;
 
 import com.subgraph.orchid.*;
 import javafx.animation.*;
@@ -14,16 +14,16 @@ import org.bitcoinj.script.*;
 import org.bitcoinj.store.*;
 import org.bitcoinj.utils.*;
 import org.fxmisc.easybind.*;
-import wallettemplate.controls.*;
-import wallettemplate.utils.*;
-import wallettemplate.utils.easing.*;
+import timestamper.controls.*;
+import timestamper.utils.*;
+import timestamper.utils.easing.*;
 
 import java.io.*;
 import java.nio.file.*;
 import java.util.*;
 
-import static wallettemplate.Main.*;
-import static wallettemplate.utils.GuiUtils.*;
+import static timestamper.Main.*;
+import static timestamper.utils.GuiUtils.*;
 
 /**
  * Gets created auto-magically by FXMLLoader via reflection. The widget fields are set to the GUI controls they're named

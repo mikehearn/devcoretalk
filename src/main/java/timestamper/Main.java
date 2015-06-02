@@ -1,4 +1,4 @@
-package wallettemplate;
+package timestamper;
 
 import com.google.common.util.concurrent.*;
 import javafx.scene.input.*;
@@ -16,16 +16,16 @@ import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
-import wallettemplate.controls.NotificationBarPane;
-import wallettemplate.utils.GuiUtils;
-import wallettemplate.utils.TextFieldValidator;
+import timestamper.controls.NotificationBarPane;
+import timestamper.utils.GuiUtils;
+import timestamper.utils.TextFieldValidator;
 
 import javax.annotation.Nullable;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 
-import static wallettemplate.utils.GuiUtils.*;
+import static timestamper.utils.GuiUtils.*;
 
 public class Main extends Application {
     public static String APP_NAME = "Timestamper";

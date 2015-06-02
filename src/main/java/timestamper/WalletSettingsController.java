@@ -1,4 +1,4 @@
-package wallettemplate;
+package timestamper;
 
 import org.bitcoinj.crypto.MnemonicCode;
 import org.bitcoinj.wallet.DeterministicSeed;
@@ -15,7 +15,7 @@ import javafx.scene.control.TextArea;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.spongycastle.crypto.params.KeyParameter;
-import wallettemplate.utils.TextFieldValidator;
+import timestamper.utils.TextFieldValidator;
 
 import javax.annotation.Nullable;
 import java.time.Instant;
@@ -26,10 +26,10 @@ import java.util.List;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 import static javafx.beans.binding.Bindings.*;
-import static wallettemplate.utils.GuiUtils.checkGuiThread;
-import static wallettemplate.utils.GuiUtils.informationalAlert;
-import static wallettemplate.utils.WTUtils.didThrow;
-import static wallettemplate.utils.WTUtils.unchecked;
+import static timestamper.utils.GuiUtils.checkGuiThread;
+import static timestamper.utils.GuiUtils.informationalAlert;
+import static timestamper.utils.WTUtils.didThrow;
+import static timestamper.utils.WTUtils.unchecked;
 
 public class WalletSettingsController {
     private static final Logger log = LoggerFactory.getLogger(WalletSettingsController.class);

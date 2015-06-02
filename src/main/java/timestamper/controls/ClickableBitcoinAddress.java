@@ -1,4 +1,4 @@
-package wallettemplate.controls;
+package timestamper.controls;
 
 import org.bitcoinj.core.Address;
 import org.bitcoinj.uri.BitcoinURI;
@@ -24,8 +24,8 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import net.glxn.qrgen.QRCode;
 import net.glxn.qrgen.image.ImageType;
-import wallettemplate.Main;
-import wallettemplate.utils.GuiUtils;
+import timestamper.Main;
+import timestamper.utils.GuiUtils;
 
 import java.awt.*;
 import java.io.ByteArrayInputStream;

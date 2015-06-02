@@ -22,7 +22,7 @@
  * THE SOFTWARE.
  */
 
-package wallettemplate.utils.easing;
+package timestamper.utils.easing;
 
 import javafx.beans.property.DoubleProperty;
 import javafx.beans.property.SimpleDoubleProperty;

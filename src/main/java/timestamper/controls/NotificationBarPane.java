@@ -1,4 +1,4 @@
-package wallettemplate.controls;
+package timestamper.controls;
 
 
 import javafx.animation.Interpolator;
@@ -17,9 +17,9 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Priority;
 import javafx.util.Duration;
-import wallettemplate.utils.GuiUtils;
-import wallettemplate.utils.easing.EasingMode;
-import wallettemplate.utils.easing.ElasticInterpolator;
+import timestamper.utils.GuiUtils;
+import timestamper.utils.easing.EasingMode;
+import timestamper.utils.easing.ElasticInterpolator;
 
 import javax.annotation.Nullable;
 

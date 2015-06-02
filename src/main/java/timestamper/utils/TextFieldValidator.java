@@ -1,4 +1,4 @@
-package wallettemplate.utils;
+package timestamper.utils;
 
 import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.SimpleBooleanProperty;

@@ -1,4 +1,4 @@
-package wallettemplate.utils;
+package timestamper.utils;
 
 import com.google.common.base.Throwables;
 import javafx.animation.*;
@@ -11,14 +11,14 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.util.Duration;
-import wallettemplate.MainController;
+import timestamper.MainController;
 
 import java.io.IOException;
 import java.net.URL;
 import java.util.function.BiConsumer;
 
 import static com.google.common.base.Preconditions.checkState;
-import static wallettemplate.utils.WTUtils.unchecked;
+import static timestamper.utils.WTUtils.unchecked;
 
 public class GuiUtils {
     public static void runAlert(BiConsumer<Stage, AlertWindowController> setup) {
@@ -160,7 +160,7 @@ public class GuiUtils {
      */
     public static URL getResource(String name) {
         if (false)
-            return unchecked(() -> new URL("file:///your/path/here/src/main/wallettemplate/" + name));
+            return unchecked(() -> new URL("file:///your/path/here/src/main/timestamper/" + name));
         else
             return MainController.class.getResource(name);
     }

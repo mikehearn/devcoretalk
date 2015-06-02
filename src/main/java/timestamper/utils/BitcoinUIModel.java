@@ -1,4 +1,4 @@
-package wallettemplate.utils;
+package timestamper.utils;
 
 import org.bitcoinj.core.*;
 import javafx.application.Platform;
